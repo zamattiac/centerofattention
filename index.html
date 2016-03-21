@@ -1,0 +1,204 @@
+<html>
+    <head>
+        <title>Center of Attention VA</title>
+
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel='shortcut icon' href="/icon.png" type="image/png" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+         function highlight(element) {
+            var capt = element.attr("capt");
+            element.css({'border-bottom':'solid 2px #ff80ff','border-right':'solid 2px orange'})
+            if (capt != null) {
+                var captEle = $("<div></div>").text(capt).attr('class','caption');
+                element.append(captEle);
+            }
+         }
+
+         function unhighlight(element) {
+            var capt = element.attr("capt");
+            if (element.attr("class") == "letter") {
+            element.css("border","solid 2px black")
+            }
+            else {
+            element.css({'border':'solid 2px white'});
+            }
+            if (capt != null) {
+                captEle = $(".caption");
+                captEle.remove();
+            }
+         }
+
+         function go(element) {
+         var url = element.attr("href");
+         if (url != null) {
+         window.location = url;
+         }}
+
+
+
+         $(document).ready(function(){
+
+            $(".hide").hide();
+
+            $(".hide").parent().hover(function(){$(".hide").toggle();});
+
+            $("div[class^='card'], .letter").on("mouseenter", function(){
+                highlight($(this))}).on("mouseleave",function(){
+                unhighlight($(this))});
+
+            $("div[class^='card']").click(function(){
+                go($(this))
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=45600540913";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div id="wrapper">
+
+        <div id="container">
+
+            <div class="column1">
+
+                <div class="card0" id="head">
+
+                    <img src="logo.png" style="padding-bottom:10%;">
+
+                    <div style="background-color: white;padding:1px;text-align:center;">
+                        <h3>contact us:</h3>
+                        <p>(703) 209-2011</p>
+                        <a href="MAILTO:centeroffattention@gmail.com">centerofattention@gmail.com</a>
+                        <h3>find us on facebook:</h3>
+                        <p><a href="//facebook.com/centerofattentionva/">facebook.com/centerofattentionva</a></p>
+                    </div>
+                </div>
+
+                <div class="card2" href="pricing/index.html">
+                    <h3>Our Services and Pricing</h3>
+                </div>
+
+                <div class="card0" capt="Make your next event the 'Center of Attention'!">
+                    <span >Weddings, Bar Mitzvahs, Birthday Parties... <br><h3>We Decorate, You Celebrate!</h3></span>
+                <!--<img src="img.png">-->
+                </div>
+
+
+
+
+
+                <!--<div class="card1" style="background-color:yellow;">hello</div>-->
+
+            </div>
+
+            <div class="column2">
+
+                <div class="card2" capt="See more from this computer-themed Bar Mitzvah" href="https://www.facebook.com/media/set/?set=a.1045057385524083.1073741841.609945115701981&amp;type=3">
+                    <img src="11391163_1045087075521114_5220633406160272039_n.jpg">
+                </div>
+
+                <div id="music" class="card2" capt="See more from this music-themed Bar Mitzvah" href="//www.facebook.com/media/set/?set=a.671873452842480.1073741833.609945115701981&type=3">
+                    <img src="1239662_671877136175445_1704727500_n.jpg">
+                </div>
+
+            </div>
+
+            <div class="column1">
+
+                <div class="card3" href="//www.facebook.com/centerofattentionva/photos_stream?tab=photos_albums">
+                    <h3 style="color:white;">See More Events</h3>
+                </div>
+
+                <div class="card3" capt="See more from this cereal-themed Bar Mitzvah" href="//www.facebook.com/media/set/?set=a.1026206067409215.1073741838.609945115701981&type=3">
+                    <img src="11263014_1039153329447822_1300581306636859900_n.jpg">
+                </div>
+
+
+                <div class="card3" style="width:300px;" capt="Click to visit our Facebook"  href="//facebook.com/centerofattentionva">
+                    <div class="fb-like" data-href="https://www.facebook.com/centerofattentionva/" data-width="170" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                </div>
+
+
+            </div>
+
+            <div class="column2">
+                <div class="card1"  href="#about">
+                About our Business
+                </div>
+
+                <div class="card1" capt="See what satisfied customers have to say." href="#testimonial">Reviews</div>
+
+
+                <div class="card2" capt="See more from this baby shower" href="//www.facebook.com/media/set/?set=a.613545855341907.1073741832.609945115701981&type=3">
+                    <img src="shower.jpg">
+                </div>
+
+            </div>
+
+        </div>
+<div class="hr"></div>
+<div id="text">
+
+    <div id="about">
+        <h3>About Us</h3>
+Sue and Aimee -- Center of Attention -- have been creating centerpieces and decorations for 5 years.  We are detail-oriented and will ensure that everything is perfect for your party!    </div>
+
+    <div id="services">
+        <h3>Our Services</h3>
+        <ul>
+            <li>Custom centerpieces</li>
+            <li>Table cards</li>
+            <li>Place cards</li>
+            <li>Posters </li>
+            <li>Booths/stands</li>
+            <li>Balloons</li>
+            <li>Party favors</li>
+            <li>Banners</li>
+            <li><a href="pricing/index.html">See more and pricing...</a></li>
+        </ul>
+    </div>
+
+</div>
+<div class="hr"></div>
+        <div id="testimonial">
+
+            <div class="letter" style="font-family:Tahoma">
+                Wow, wow, wow!
+                Amazing. Everyone loved the decorations, kids had a blast.
+                <br>Thank you so much!<br><br>
+                Janet
+            </div>
+            <div class="letter" style="font-family:Futura">
+                Oh my gosh...the decorations were INCREDIBLE! <br> We could not have been happier with everything...The compliments didn't stop coming. <br><br> THANK YOU THANK YOU THANK YOU!!!
+            </div>
+
+            <div class="letter" style="font-family:Courier New">
+                Loved them is an understatement!<br> Thank you for completing nailing this for us. The whole room was perfect.
+            </div>
+
+            <div class="letter" style="font-family:Comic Sans MS">
+                Aimee and Sue, <br><br>
+                Thank you again for your help with Aron's Bar Mitzvah decorations. Everything was perfect down to <span style="text-decoration:underline;"> the last detail</span>. I didn't even realize until I saw the pictures how perfect everything was.
+                <br><br>Romy & Steve
+            </div>
+
+            <div class="letter" style="font-family:Lucida;">
+                <p style="text-decoration:underline;">Thank you !!!<br>
+                For everything!<br><br></p>
+                <span>Wendi</span>
+            </div>
+
+        </div>
+        <div id="footer"> copyright center of attention, va/design matthew keitelman<br>2016</div>
+    </div>
+    </body>
+</html>

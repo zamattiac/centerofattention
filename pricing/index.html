@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title>
+        Services and Pricing
+    </title>
+
+    <style>
+        h2 {text-align:center;padding:10px;width:96%;margin:auto;}
+        body {background-color:#80bfff;}
+        .column3 {width:400px;float:left;}
+        .cardpricing {background-color:white;border-radius:8px;}a
+        .arrow {width:300%;padding-top:0;}
+        .hide {padding-top:10px;}
+        #container {width:98%;margin:auto;padding-top:10px;}
+        .card4 {
+            background-color:#ff99dd;
+            float:left;
+            margin:1%;
+            width:90%;
+        }
+        h4 {margin:2%;}
+
+    </style>
+            <link rel='shortcut icon' href="../icon.png" type="image/png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+                 function highlight(element) {
+            var capt = element.attr("capt");
+            element.css({'border-bottom':'solid 2px #ff80ff','border-right':'solid 2px orange'})
+            if (capt != null) {
+                var captEle = $("<div></div>").text(capt).attr('class','caption');
+                element.append(captEle);
+            }
+         }
+
+         function unhighlight(element) {
+            var capt = element.attr("capt");
+            if (element.attr("class") == "letter") {
+            element.css("border","solid 2px black")
+            }
+            else {
+            element.css({'border':'solid 2px white'});
+            }
+            if (capt != null) {
+                captEle = $(".caption");
+                captEle.remove();
+            }
+         }
+
+         function go(element) {
+         var url = element.attr("href");
+         if (url != null) {
+         window.location = url;
+         }}
+
+
+         $(document).ready(function(){
+
+            $(".arrow").hide();
+
+            $(".arrow").parent().hover(function(){
+                //$(".hide, .arrow").toggle();
+                });
+
+            $("div[class^='card'], .letter").on("mouseenter", function(){
+                highlight($(this))}).on("mouseleave",function(){
+                unhighlight($(this))});
+
+            $("div[class^='card']").click(function(){
+                go($(this))
+                });
+            });
+    </script>
+
+    <link rel="stylesheet" href="../index.css" type="text/css">
+
+</head>
+<div id="container">
+
+        <h2 class="cardpricing">Services and Pricing</h2>
+    <div class="column3">
+        <div class="card4">
+            <h4>CENTERPIECES</h4>
+            <img src="../10982001_1039161779446977_1106412623581168131_n.jpg">
+            <img class="arrow" src="../arrow.png">
+            <div class="hide">
+        We can create a unique (one-of-a-kind) centerpiece for each table or the same piece for every table:
+        <h5>Unique pieces: $85 per centerpiece</h5>
+        <h5>Duplicate pieces: $75 per centerpiece</h5></div>
+        </div>
+
+        <div class="card4">
+
+            <h4>TABLE CARDS</h4>
+            <img class="arrow" src="../arrow.png">
+            <div class="hide">
+                            Table cards can be up to 7.5" x 9" in size and are full-color, double sided, and laminated
+
+                <h5>$10 per card</h5>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="column3">
+
+
+
+        <div class="card4">
+
+            <h4>BOOTHS/STANDS</h4>
+            <img src="../66e8ab18-4571-443a-b8f2-fe577b919ce3.jpg">
+            <h4 style="font-weight:normal;">Prices vary by size.  Call us for a quote!</h4>
+        </div>
+
+        <div class="card4">
+
+            <h4>BALLOONS</h4>
+            <img src="../1b52ae73-e497-4eb5-9258-37850a0302bb.jpg">
+            <img class="arrow" src="../arrow.png">
+            <div class="hide">
+        <br><br>Latex and Mylar balloons available. Price varies according to type and quantity of balloon(s) and design.  Please call for a quote.
+        </div></div>
+    </div>
+
+    <div class="column3">
+
+        <div class="card4">
+
+
+            <h4>BANNERS</h4>
+            Price varies by size and number of colors used.  Call us for a quote!
+        </div>
+
+        <div class="card4">
+
+            <h4>PLACE CARDS</h4>
+            <img class="arrow" src="../arrow.png">
+            <div class="hide">
+            Tented or flat; we can create ticket-style cards for sport- or theater-themed parties as well as cards with your own images on them:
+            <!--<img class="arrow" src="arrow.png">-->
+            <!--<div class="hide">-->
+                <h5>$2 per card</h5>
+            </div>
+            <!--</div>-->
+        </div>
+
+        <div class="card4">
+
+            <h4>GIFT BAGS & PARTY FAVORS</h4>
+            Prices vary.  Please call for a quote.
+        </div>
+
+        <div class="card4" style="background-color:#BEFF80">
+                        Please contact us for a quote:
+             <br><br>
+                        <p>(703) 209-2011</p>
+                        <a href="MAILTO:centeroffattention@gmail.com">centerofattention@gmail.com</a>
+                        <p><a href="//facebook.com/centerofattentionva/">facebook.com/centerofattentionva</a></p>
+        </div>
+        <div class="card4" href="../index.html" style="background-color:#BEFF80">
+            <img width="10%" src="../return.png">
+        </div>
+    </div>
+</html>

@@ -1,0 +1,146 @@
+            html, body {
+            margin:0;
+            padding:0;
+            height:100%;
+            font-family:Verdana;
+            font-size:14px;
+            }
+
+            #wrapper {
+            min-height:100%;
+            position:relative;
+            padding-bottom:100px;
+            overflow: hidden;
+            }
+
+            div {
+            border-radius:8px;
+            }
+
+            .hr {
+            float:left;
+            border-bottom: 1px solid black;
+            width:100vw;
+            margin-bottom:15px;
+            margin-top:15px;
+            }
+
+            a {
+            color:black;
+            line-height:2;
+            }
+            a:visited {
+            color:green;
+            line-height:2;
+            }
+
+            div[class^="column"] {
+            float:left;
+            margin-left:12px;
+            }
+
+            .column1 div {width:300px;}
+            .column2 div {width:250px;}
+
+            #head {
+            min-height:50vh;
+            }
+
+            div[class^="card"] {
+            border:solid white 2px;
+            margin-top:12px;
+            padding:13px;
+            }
+
+            .caption {
+            position:relative;
+            top:100%;
+            margin-top:10px;
+            color: white;
+            font-weight:bold;
+            }
+
+
+            #container {
+            margin:auto;
+            }
+
+            .card0 {
+            background-color: #ffb3ff;
+            }
+
+            .card1 {
+            background-color:#66ff66;
+            }
+
+            .card2 {
+            background-color:#00cca3;
+            }
+
+            .card3 {
+            background-color:#4da6ff;
+            }
+
+
+
+            .hide {
+            margin:0;
+            }
+
+            div[class^="card"] img {
+            width:100%;
+            border-radius:10px;
+            }
+
+            #text{
+            float:left;
+            width:100vw;
+            margin:10px;
+            line-height:1.7;
+            }
+
+            #about, #services {
+            padding:10px;
+            margin:5px;
+            float:left;
+            width:350px;
+            background-color:#ffd633;
+            }
+
+            #pricing {
+            width:90vw;
+            margin:auto;
+            margin-top:1%;
+            padding-bottom:0;
+            background-color:#80bfff;
+            }
+
+            #testimonial {
+            float:left;
+
+            width:100%;
+            padding:10px;
+            overflow:hidden;
+            }
+
+            .letter {
+            float:left;
+            background-color:white;
+            min-height:15vh;
+            padding:15px;
+            margin:15px;
+            min-width:20%;
+            max-width:60vw;
+            border-radius:25px;
+            border:solid 2px;
+            }
+
+            #footer {
+            font-size:12px;
+            width:100%;
+            height:40px;
+            position:absolute;
+            bottom:0;
+            left:20%;
+
+            }
